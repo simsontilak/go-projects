@@ -1,3 +1,3 @@
-module DnATraining
+module algorithms
 
 go 1.21
