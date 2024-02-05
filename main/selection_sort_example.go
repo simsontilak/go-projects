@@ -3,23 +3,12 @@ package main
 import (
 	"algorithms/common"
 	"algorithms/sort/selection"
-	"fmt"
 )
 
 func main() {
-	randomData := common.GetRandomNumbers(20, 7, 17)
-
-	fmt.Println("Random Data:")
-	for i := 0; i < len(randomData); i++ {
-		fmt.Println(randomData[i])
-	}
+	randomData := common.GetRandomNumbers(20, 21, 99)
+	common.PrintIntArray(20, randomData)
 
 	sortedData := selection.SortArray(randomData)
-
-	fmt.Println("============")
-	fmt.Println("Sorted Data:")
-	for i := 0; i < len(sortedData); i++ {
-		fmt.Println(sortedData[i])
-	}
-
+	common.PrintIntArray(20, sortedData)
 }
