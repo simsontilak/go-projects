@@ -24,7 +24,7 @@ func main() {
 	sortedBubbleData := bubble.SortArray(dataForBubble)
 	common.PrintIntArrayMsg(20, sortedBubbleData, "Bubble Sort")
 
-	largeRandomData := common.GetRandomNumbers(100000, 1, 200000)
+	largeRandomData := common.GetRandomNumbers(10000, 1, 200000)
 	dataForSelection = make([]int, len(largeRandomData))
 	dataForBubble = make([]int, len(largeRandomData))
 	copy(dataForSelection, largeRandomData)
